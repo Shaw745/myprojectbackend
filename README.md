@@ -1,12 +1,56 @@
-# React + Vite
+ Ecommerce Backend API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple backend I built for an ecommerce app using Node.js, Express.js, and MongoDB.
+It allows users to register, log in, and create posts/products.
 
-Currently, two official plugins are available:
+How I Built It (In Simple Terms)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Set up the project
 
-## Expanding the ESLint configuration
+Created a folder and opened it in VS Code
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ran npm init -y to start a Node.js project
+
+Installed important packages like:
+
+express → for building the server
+
+mongoose → to connect to MongoDB
+
+dotenv → to hide sensitive info like database passwords
+
+nodemon → to restart the server automatically during development
+
+Connected to MongoDB
+
+Created a free MongoDB Atlas account
+
+Made a database and got my connection string
+
+Stored it inside .env so it’s not public
+
+Used mongoose.connect() in my code to link the app to the database
+
+Created API routes
+
+Auth Routes → For user signup and login
+
+Post Routes → For creating and getting posts/products
+
+Tested with Postman
+
+Wrote different sample data (JSON format)
+
+Sent requests to my routes to see if they work
+
+Fixed errors along the way
+
+“Bad Auth” → I corrected my MongoDB username/password in .env
+
+“req.body undefined” → I used express.json() middleware to read JSON data
+
+Final Touch
+
+Organized the code into routes, controllers, and models folders
+
+Added clear responses so Postman shows success or error messages
